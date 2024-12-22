@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <!-- for the style I used some css from the net to make the pages more organized -->
+    <style>
+        body{
+            background: #478778;
+        }
+        nav {
+            background: #478778;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #ecffdc;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+        section {
+            padding: 2rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+       #About .container {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            gap: 20px; /* Add spacing between the photo and content */
+        }
+
+        #About .photo {
+            flex: 1; /* Photo takes up 1 part of the space */
+            text-align: center; /* Center the photo and text inside this section */
+        }
+
+        #About .content {
+            flex: 2; /* Content takes up 2 parts of the space */
+        }
+
+        #About img {
+            max-width: 100%; /* Make the photo responsive */
+            height: auto;
+            border-radius: 10px; /* Optional: add rounded corners */
+        }
+
+        #About article {
+            font-size: 1rem; /* Adjust font size as needed */
+            line-height: 1.6; /* Improve readability */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #478778;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        thead {
+            font-style: italic;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #478778;
+        }
+        footer {
+            background: #478778;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        footer h1 {
+            color: #ddd;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        footer section {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+        footer label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        footer input[type="text"],
+        footer input[type="email"],
+        footer input[type="number"],
+        footer textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        footer input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        footer input[type="submit"]:hover {
+            background: #45a049;
+        }
+       main h2 {
+        color: #ddd;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+       }
+      </style>
+    
+</head>
+<br>
+<!-- the nav bar on the header section-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home"> Home</a></li>
+                <li><a href="#About"> About</a></li>
+                <li><a href="#Work"> Work</a></li>
+                <li><a href="#Resume"> Resume</a></li>
+                <li><a href="#Contact"> Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- home , about work and resume in the main -->
+    <main>
+        <section id="Home"> 
+            <h2> this video show you what could I do for you </h2>
+            <video width="300" height="200" controls>
+
+                <source src="/video.mp4" type="video/mp4" />
+            
+            
+            </video>
+        </section>
+        <section id="About">
+            <div class="container">
+                <div class="photo">
+                    <h2>Welcome to Amani's Portfolio</h2>
+                    <h3>Let's dive in!</h3>
+                    <img src="/photo2.jpg" alt="a cartoon pic for fun" width="300px" height="300px">
+                </div>
+                <div class="content">
+                    <article>
+                        <p>
+                            I am a highly motivated graduate student in networking with a strong foundation in computer science principles and programming languages. Eager to leverage academic knowledge and project experience to contribute to the development of innovative software solutions.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+        <section id="Work">
+            <table border="1">
+               
+               <br> <thead> This table represent my achivements till the time you are reading  </thead> </br>
+                <tbody> 
+                    <tr>
+                        
+                        <td>gomycode </td>
+                        <td>recent</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Master Computer Systems & Networs </td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor Computer System</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr></tr>
+                        <td>Hight School diploma in science</td>
+                        <td>2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <section id="Work"></section>
+        <h2> discover my recent project !</h2>
+        <ul>
+            <li><a href="#project1"> A Web applicayion for a dentiste</a></li> <!-- links for the projects-->
+            <li><a href="#project2"> A web application for a smart home </a></li>
+        </ul>
+        
+
+    </main>
+    <!-- for contact part I used the footer -->
+     <!-- I used forms to get the informations of contacts -->
+     <footer id="Contact">
+        <section>
+            <h1> Contact Us </h1>
+            <br>
+               <label>First Name : </label>
+               <input type="text" name="name" placeholder="Type your name here" /> </br>
+             <br>  <label>Surename : </label> 
+               <input type="text" name="sname" placeholder="Type your Surename here" /> </br>
+             <br>  <label>Email : </label>
+               <input type="email" name="email" placeholder="Type your email" /> </br>
+              <br> <label>Phone number : </label>
+               <input type="number" name="phone" placeholder="Type your phone number" /> </br>
+             <br>  <label>Message: </label> </br>
+               <textarea name="message" cols="30" rows="5">
+               </textarea> 
+           <br>  <input type="submit" value="Submit" /> </br>
+        </section>
+     </footer>
+</body>
+</html>
+<!-- I used section to be more organized-->
